@@ -77,11 +77,24 @@ h1 {
     margin-right: auto;
 }
 
-.philosophy-content p {
+.lang-block {
+    margin-bottom: 32px;
+}
+
+.philosophy-content p.en {
     font-size: 1.15rem;
-    color: #424245;
-    margin-bottom: 20px;
+    color: var(--text-main);
+    margin-bottom: 8px;
     line-height: 1.6;
+    font-weight: 400;
+}
+
+.philosophy-content p.jp {
+    font-size: 0.95rem;
+    color: var(--text-sub);
+    line-height: 1.7;
+    font-weight: 300;
+    word-break: keep-all;
 }
 
 /* Main Card */
