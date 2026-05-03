@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kim Jongho | Portfolio 2026</title>
+    <title>Kim Jongho | Portfolio & CV 2026</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,23 +11,44 @@
 </head>
 <body>
     <div class="container">
-        <header>
+        <header class="fade-in">
             <h1>Kim Jongho</h1>
             <p class="subtitle">Architecture & Design Portfolio 2026</p>
         </header>
         
         <main>
-            <div class="card">
+            <!-- Main Portfolio Card -->
+            <section class="main-card fade-in delay-1">
                 <div class="card-content">
-                    <h2>Professional Works</h2>
-                    <p>Click the button below to view the full portfolio in high resolution.</p>
-                    <a href="assets/portfolio.pdf" target="_blank" class="btn">View Portfolio (PDF)</a>
+                    <span class="badge">Featured Work</span>
+                    <h2>Architecture Portfolio</h2>
+                    <p>High-resolution collection of professional works and projects from 2024-2026.</p>
+                    <a href="assets/portfolio.pdf" target="_blank" class="btn primary">Open Portfolio</a>
                 </div>
-            </div>
+            </section>
+
+            <!-- Document Links Section -->
+            <section class="docs-section fade-in delay-2">
+                <h3>Resumes & Documents</h3>
+                <div class="doc-grid">
+                    <a href="assets/resume_jp.pdf" target="_blank" class="doc-item">
+                        <span class="doc-lang">JP</span>
+                        <span class="doc-name">履歴書 (Resume)</span>
+                    </a>
+                    <a href="assets/resume_kr.pdf" target="_blank" class="doc-item">
+                        <span class="doc-lang">KR</span>
+                        <span class="doc-name">이력서 (Resume)</span>
+                    </a>
+                    <a href="assets/experience_jp.pdf" target="_blank" class="doc-item">
+                        <span class="doc-lang">JP</span>
+                        <span class="doc-name">職務経歴書 (CV)</span>
+                    </a>
+                </div>
+            </section>
         </main>
 
-        <footer>
-            <p>&copy; 2026 Kim Jongho. All rights reserved.</p>
+        <footer class="fade-in delay-3">
+            <p>&copy; 2026 Kim Jongho. Based in Tokyo / Seoul.</p>
         </footer>
     </div>
 </body>
