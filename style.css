@@ -140,12 +140,13 @@ h2 {
 /* Button */
 .btn {
     display: inline-block;
-    padding: 14px 32px;
+    padding: 14px 28px;
     border-radius: 100px;
     font-weight: 600;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 0.9rem;
     transition: var(--transition);
+    text-align: center;
 }
 
 .btn.primary {
@@ -156,6 +157,39 @@ h2 {
 .btn.primary:hover {
     background: #424245;
     transform: translateY(-2px);
+}
+
+.btn.outline {
+    border: 1px solid var(--text-main);
+    color: var(--text-main);
+    background: transparent;
+}
+
+.btn.outline:hover {
+    background: rgba(0,0,0,0.05);
+    transform: translateY(-2px);
+}
+
+/* Portfolio Grid in Main Card */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 32px;
+}
+
+.portfolio-lang-group h4 {
+    font-size: 0.8rem;
+    color: var(--text-sub);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+.btn-row {
+    display: flex;
+    gap: 12px;
 }
 
 /* Docs Section */
@@ -216,4 +250,7 @@ footer {
     h1 { font-size: 2.5rem; }
     .main-card { padding: 40px 24px; }
     .doc-grid { grid-template-columns: 1fr; }
+    .portfolio-grid { grid-template-columns: 1fr; gap: 32px; }
+    .btn-row { flex-direction: column; }
+    .btn { width: 100%; }
 }
